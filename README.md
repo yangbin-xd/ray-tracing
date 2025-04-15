@@ -13,8 +13,7 @@ generate.py is to generate CSI
 dji.osm is the map file  
 
 # Author
-[Bin Yang](https://scholar.google.com/citations?user=_v2KA7UAAAAJ&hl=zh-CN)  
-Email: binyang_2020@163.com  
+[Bin Yang](https://scholar.google.com/citations?user=_v2KA7UAAAAJ&hl=zh-CN) Email: binyang_2020@163.com  
 
 # Reference
 [1] [DeepMIMO](https://github.com/DeepMIMO/DeepMIMO-matlab)  
