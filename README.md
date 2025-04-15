@@ -1,8 +1,10 @@
 # ray-tracing
-A software for ray tracing based on MATLAB ray tracing [toolbox](https://www.mathworks.com/help/comm/ref/rfprop.raytracing.html)  
-map file can be downloaded from [Open Street Map](https://www.openstreetmap.org)  
+<img src='scenario.png' alt='The framework' width='600'>
+The framework of radio map-based beamforming assisted with reduced pilots.  
 
 # Introduction
+A software for ray tracing based on MATLAB ray tracing [toolbox](https://www.mathworks.com/help/comm/ref/rfprop.raytracing.html)  
+map file can be downloaded from [Open Street Map](https://www.openstreetmap.org)  
 ray_tracing1.0 folder is for static scenarios  
 ray_tracing2.0 folder is for dynamic scenarios  
 main.py is main function for CSI generation  
