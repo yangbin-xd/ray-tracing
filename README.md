@@ -5,6 +5,10 @@ map file can be downloaded from [Open Street Map](https://www.openstreetmap.org)
 # Introduction
 ray_tracing1.0 folder is for static scenarios  
 ray_tracing2.0 folder is for dynamic scenarios  
+main.py is main function for CSI generation  
+parameter.py is to set parameters for the system  
+generate.py is to generate CSI  
+dji.osm is the map file  
 
 # Author
 [Bin Yang](https://scholar.google.com/citations?user=_v2KA7UAAAAJ&hl=zh-CN)  
