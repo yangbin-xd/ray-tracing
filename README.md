@@ -1,6 +1,6 @@
 # ray-tracing
-<img src='scenario.png' alt='The framework' width='600'>
-The framework of radio map-based beamforming assisted with reduced pilots.  
+<img src='scenario.png' alt='Ray Tracing' width='600'>
+The scenario for ray tracing.  
 
 # Introduction
 A software for ray tracing based on MATLAB ray tracing [toolbox](https://www.mathworks.com/help/comm/ref/rfprop.raytracing.html)  
