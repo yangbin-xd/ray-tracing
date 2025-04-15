@@ -1,6 +1,5 @@
 # ray-tracing
 A software for ray tracing based on MATLAB ray tracing [toolbox](https://www.mathworks.com/help/comm/ref/rfprop.raytracing.html)  
-
 map file can be downloaded from [Open Street Map](https://www.openstreetmap.org)  
 
 # Introduction
