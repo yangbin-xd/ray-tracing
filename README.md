@@ -16,7 +16,6 @@ dji.osm is the map file
 __1. Set system parameters in parameters.m file__  
 ```matlab
 %% system parameter setting
-
 f = 3.5*1e9;                                % frequency 3.5 GHz
 c = physconst('LightSpeed');                % c 299,792,458 m/s
 lambda = c/f;                               % wavelength
@@ -35,7 +34,6 @@ Tx_rotation = [0 0]';                       % BS antenna rotation
 Tx_ant_spacing = 0.5;                       % BS antenna spacing
 
 %% UE parameter setting
-
 % yaw = -5:5;                               % yaw angle
 UE_num = 231;                               % UE number
 UE_in_row = 21;                             % UE number in row
@@ -50,6 +48,30 @@ Rx_ant_spacing = 0.5;                       % UE antenna spacing
 lat1 = 22.5809;                             % UE range in latitude
 lont1 = 113.9370;                           % UE range in longitude
 ```
+
+__2. Run main.m file to generate CSI data labeled with locations__  
+
+__3. For quick operation without Graphical interface__  
+```matlab
+This section can be commented out to disable execution.
+% ----in generate.m line 18-25---
+    show(UE);
+    show(BS);
+    plot(rays{1});
+    if (j ~= UE_num)
+        viewer.clearMap();
+    end
+% -------------------------------
+
+% -----in main.m line 20-26------
+    if exist('viewer','var') && isvalid(viewer) 
+        viewer.clearMap();
+    else
+        viewer = siteviewer("Basemap","openstreetmap","Buildings",mapfile); 
+    end
+% -------------------------------
+```
+
 
 ## 📨 Contact
 [Bin Yang](https://scholar.google.com/citations?user=_v2KA7UAAAAJ&hl=zh-CN) Email: binyang_2020@163.com  
