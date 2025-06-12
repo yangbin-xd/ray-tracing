@@ -51,7 +51,7 @@ lont1 = 113.9370;                           % UE range in longitude
 
 __2. Run main.m file to generate CSI data labeled with locations__  
 
-__3. For quick operation without Graphical interface__  
+__3. (Optional) For quick operation without Graphical interface__  
 ```matlab
 % These two sections can be commented out to disable execution.
 % ----in generate.m line 18-25---
