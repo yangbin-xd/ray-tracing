@@ -1,16 +1,55 @@
 # 🚨 ray-tracing
+This is a ray tracing CSI generation software based on [MATLAB](https://www.mathworks.com/help/comm/ref/rfprop.raytracing.html) and OpenStreetMap(https://www.openstreetmap.org).
+
 <img src='scenario.png' alt='Ray Tracing' width='600'>
-The scenario for ray tracing.  
+The interface and scenario for ray tracing of the software.  
 
 ## 🗂️ Introduction
-A software for ray tracing based on MATLAB ray tracing [toolbox](https://www.mathworks.com/help/comm/ref/rfprop.raytracing.html)  
-map file can be downloaded from [Open Street Map](https://www.openstreetmap.org)  
 ray_tracing1.0 folder is for static scenarios  
 ray_tracing2.0 folder is for dynamic scenarios  
 main.py is main function for CSI generation  
 parameter.py is to set parameters for the system  
 generate.py is to generate CSI  
 dji.osm is the map file  
+
+## 🛠️ Please follow the following steps:
+__1. Set system parameters in parameters.m file__  
+```matlab
+%% system parameter setting
+
+f = 28*1e9;                                % frequency 3.4 GHz
+c = physconst('LightSpeed');                % c 299,792,458 m/s
+lambda = c/f;                               % wavelength
+Nc = 624;                                   % subcarriers
+B = 60*1e9;                               % bandwidth 50 MHz
+Ts = 1/B;                                   % duration 20 ns
+mapfile = "dji.osm";                        % map file
+MaxNumReflections = 2;                     % maximun reflections number
+
+%% BS parameter setting        
+        
+BS_loc = [22.5818, 113.9379];              % BS location
+BS_height = 10;                             % BS height 10 m
+BS_Tx = [32, 1];                             % BS antenna shape
+Tx_num = prod(BS_Tx);                       % BS antenna number
+Tx_rotation = [0 0]';                       % BS antenna rotation
+Tx_ant_spacing = 0.5;                % BS antenna spacing
+
+%% UE parameter setting
+
+UE_num = 1000;                               % UE number
+UE_in_row = 50;                              % UE number in row
+UE_in_col = ceil(UE_num/UE_in_row);         % UE number in column
+row_space = 5;                            % UE distance in row
+col_space = 5;                            % UE distance in column
+UE_height = 100;                              % UE height 1.5 m
+UE_Rx = [1, 1];                             % UE antenna shape
+Rx_num = prod(UE_Rx);                       % UE antenna number
+Rx_rotation = [0 0]';                       % UE antenna rotation
+Rx_ant_spacing = 0.5;                % UE antenna spacing
+lat1 = 22.5809;                             % UE range in latitude
+lont1 = 113.9369;                           % UE range in longitude
+```
 
 ## 📨 Contact
 [Bin Yang](https://scholar.google.com/citations?user=_v2KA7UAAAAJ&hl=zh-CN) Email: binyang_2020@163.com  
