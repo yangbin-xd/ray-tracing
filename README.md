@@ -1,6 +1,8 @@
 # 🚨 ray-tracing
 This is a ray tracing CSI generation software based on [MATLAB](https://www.mathworks.com/help/comm/ref/rfprop.raytracing.html) and [OpenStreetMap](https://www.openstreetmap.org).
 
+[![Watch the video]('scenario.png')](https://github.com/yangbin-xd/ray-tracing/blob/main/video.mp4)
+
 <video src="https://github.com/yangbin-xd/ray-tracing/blob/main/video.mp4"
        controls
        muted
