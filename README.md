@@ -7,7 +7,7 @@ This is a ray tracing CSI generation software based on [MATLAB](https://www.math
     controls
     muted
     playsinline
-    width="200"
+    width="100"
     height: auto;"
   >
     Your browser does not support the video tag.
